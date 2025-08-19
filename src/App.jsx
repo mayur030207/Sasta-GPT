@@ -49,7 +49,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen flex bg-zinc-900">
+    <div className="min-h-full flex bg-zinc-900">
       {/* History side */}
       {/* <History chats={chats}/> */}
 
@@ -62,7 +62,6 @@ function App() {
               localStorage.clear();
               document.location.reload();
             }
-        
           }}
           className="bg-zinc-700 text-zinc-100 font-semibold md:px-10 text-center py-2 px-5 md:text-2xl rounded-full hover:bg-zinc-600 transition cursor-pointer absolute left-2 top-5 z-20"
         >
