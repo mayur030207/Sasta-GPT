@@ -49,12 +49,12 @@ function App() {
   }
 
   return (
-    <div className="min-h-full flex bg-zinc-900">
+    <div className="min-h-screen flex bg-zinc-950 relative">
       {/* History side */}
       {/* <History chats={chats}/> */}
 
       {/* Main Chat Area */}
-      <div className="flex-1 flex flex-col h-screen md:h-screen bg-zinc-950 rounded-l-3xl shadow-xl">
+      <div className="flex-1 flex flex-col h-[95%] bg-zinc-950 rounded-l-3xl shadow-xl">
         <span
           onClick={(e) => {
             e.preventDefault();
@@ -71,7 +71,7 @@ function App() {
           <span className="gemini-gradient">Geminee</span>
         </h1>
 
-        <div className="flex-1 overflow-y-auto answer px-6 py-4">
+        <div className="flex-1 overflow-y-auto answer px-6 py-4 max-h-[75vh]">
           <div className="flex flex-col gap-3 text-wrap text-[0.5rem]">
             {chats.map((chat, index) => {
               return (
@@ -86,7 +86,7 @@ function App() {
 
         {/* Input Area */}
         <form
-          className="flex items-center bg-zinc-800 rounded-full mx-auto mb-8 w-screen md:w-4/5 p-2 shadow-lg"
+          className="flex items-center bg-zinc-800 rounded-full mx-auto mb-3 w-screen md:w-4/5 p-2 shadow-lg absolute bottom-5 md:left-35"
           onSubmit={handleInput}
         >
           <input
