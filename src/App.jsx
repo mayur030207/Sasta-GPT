@@ -86,7 +86,7 @@ function App() {
 
         {/* Input Area */}
         <form
-          className="flex items-center bg-zinc-800 rounded-full mx-auto mb-3 w-screen md:w-4/5 p-2 shadow-lg absolute bottom-5 md:left-35"
+          className="flex items-center bg-zinc-800 rounded-full mx-auto md:mb-3 mb-14 w-screen md:w-4/5 p-2 shadow-lg absolute bottom-5 md:left-35"
           onSubmit={handleInput}
         >
           <input
