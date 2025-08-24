@@ -80,7 +80,6 @@ function App() {
                 </p>
               </>
             )}
-            <span className="gemini-gradient">Geminee</span>
             {chats.map((chat, index) => {
               return (
                 <Fragment key={index}>
