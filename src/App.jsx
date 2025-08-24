@@ -73,6 +73,14 @@ function App() {
 
         <div className="flex-1 overflow-y-auto answer px-6 py-4 max-h-[75vh]">
           <div className="flex flex-col gap-3 text-wrap text-[0.5rem]">
+            {chats.length === 0 && (
+              <>
+                <p className="text-white text-3xl mx-auto text-center leading-[90vh]">
+                  What can I help with?
+                </p>
+              </>
+            )}
+            <span className="gemini-gradient">Geminee</span>
             {chats.map((chat, index) => {
               return (
                 <Fragment key={index}>
