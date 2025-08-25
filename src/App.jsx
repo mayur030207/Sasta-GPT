@@ -75,7 +75,7 @@ function App() {
           <div className="flex flex-col gap-3 text-wrap text-[0.5rem]">
             {chats.length === 0 && (
               <>
-                <p className="text-white text-3xl mx-auto text-center leading-[90vh]">
+                <p className="text-white text-3xl mx-auto text-center md:leading-[90vh] leading-20">
                   What can I help with?
                 </p>
               </>
